@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "wings_above",
+  "version": "${version}",
+
+  "name": "Wings Above",
+  "description": "Adds A Bunch Of New Wing Choices For The Player!",
+  "authors": [
+    "Nalaisgod"
+  ],
+  "contact": {
+    "homepage": "https://nalasmod.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.nalaisgod.wings_above.WingsAboveMod"
+    ]
+  },
+  "mixins": [
+    "wings_above.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
