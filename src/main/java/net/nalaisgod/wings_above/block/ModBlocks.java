@@ -17,6 +17,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.nalaisgod.wings_above.WingsAboveMod;
+import net.nalaisgod.wings_above.item.ModItemGroup;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -25,39 +26,39 @@ public class ModBlocks {
 
     public static final Block CLOUD_BLOCK = registerBlock("cloud_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block CLOUD_BRICKS = registerBlock("cloud_bricks",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block SKY_BRICKS = registerBlock("sky_bricks",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block SKY_BRICK_SLAB = registerBlock("sky_brick_slab",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block SKY_BRICK_STAIRS = registerBlock("sky_brick_stairs",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block SKY_BRICK_DOOR = registerBlock("sky_brick_stairs_door",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block SKY_BRICK_TRAPDOOR = registerBlock("sky_brick_trapdoor",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block SKY_BRICK_CHEST = registerBlock("sky_brick_chest",
             new Block(FabricBlockSettings.of(Material.METAL).strength(0.1f, 10f).requiresTool().breakInstantly()),
-            ItemGroup.MISC);
+            ModItemGroup.WINGS_ABOVE);
 
     public static final Block TOPAZ_ORE = registerBlock("topaz_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4.5f, 8f).requiresTool(),
-                    UniformIntProvider.create(3, 7)), ItemGroup.MISC);
+                    UniformIntProvider.create(3, 7)), ModItemGroup.WINGS_ABOVE);
 
 
 
