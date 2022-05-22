@@ -1,6 +1,7 @@
 package net.nalaisgod.wings_above;
 
 import net.fabricmc.api.ModInitializer;
+import net.nalaisgod.wings_above.block.ModBlocks;
 import net.nalaisgod.wings_above.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +15,7 @@ public class WingsAboveMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 
 	}
 }
