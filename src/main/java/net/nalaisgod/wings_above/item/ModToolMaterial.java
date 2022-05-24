@@ -8,7 +8,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    PENATRATOR(MiningLevels.IRON, 750, 10.0f, 1f, 25, () -> Ingredient.ofItems(ModItems.PENATRATOR));
+    PENATRATOR(MiningLevels.IRON, 750, 10.0f, 1f, 25, () -> Ingredient.ofItems(ModItems.TOPAZ));
 
 
     private final int miningLevel;
