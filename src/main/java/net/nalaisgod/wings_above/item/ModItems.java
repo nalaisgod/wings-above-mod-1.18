@@ -50,11 +50,11 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.UNCOMMON)));
 
     public static final Item BROKEN_WINGS = registerItem("broken_wings",
-            new ModBasicWings(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
+            new ModWings(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.UNCOMMON)));
 
     public static final Item FIRE_WINGS = registerItem("fire_wings",
-            new ModOtherOtherBasicWings(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.RARE)));
 
     public static final Item ICE_WINGS = registerItem("ice_wings",
@@ -62,15 +62,18 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.RARE)));
 
     public static final Item ANGEL_WINGS = registerItem("angel_wings",
-            new ModComplexWings(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.EPIC)));
 
     public static final Item JETPACK = registerItem("jetpack",
-            new ModOtherBasicWings(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.WINGS, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.RARE)));
 
     public static final Item ICE_WAND = registerItem("ice_wand",
-            new Item(new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).rarity(Rarity.RARE)));
+            new IceWand(new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).maxDamage(100).rarity(Rarity.RARE)));
+
+    public static final Item HEAL_WAND = registerItem("heal_wand",
+            new HealWand(new FabricItemSettings().group(ModItemGroup.WINGS_ABOVE).maxDamage(100).rarity(Rarity.RARE)));
 
     public static final Item PENATRATOR = registerItem("penatrator",
             new PenatratorItem(ToolMaterials.NETHERITE, 3, -3.2F,

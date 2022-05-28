@@ -4,6 +4,7 @@
   "package": "net.nalaisgod.wings_above.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BrewingRecipeRegistryMixin"
   ],
   "client": [
     "ExampleMixin"
